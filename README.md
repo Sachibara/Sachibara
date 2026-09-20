@@ -2,95 +2,168 @@
 
 # Hi, I'm Jim Rodmark Camus 👋
 
-### BSIT — Network Technology | Network & Software Developer
+### IT Network Support | Network Technology | Cybersecurity | Python & Full-Stack Development
 
-I build practical tools around **network security, system control, desktop applications, and web interfaces**.
+BS Information Technology graduate specializing in **Network Technology**, with hands-on experience in IT support, networking, cybersecurity, desktop application development, and full-stack development.
 
 [![GitHub](https://img.shields.io/badge/GitHub-Sachibara-181717?style=for-the-badge&logo=github)](https://github.com/Sachibara)
-[![Portfolio](https://img.shields.io/badge/Portfolio-View%20Site-0A84FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://raw.githack.com/Sachibara/final_omnishare/main/portfolio/index.html)
+[![Portfolio](https://img.shields.io/badge/Portfolio-View%20Portfolio-0A84FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://raw.githack.com/Sachibara/final_omnishare/main/portfolio/index.html)
 
 </div>
 
 ---
 
-## About Me
+## 👨‍💻 Professional Profile
 
-- 🎓 BSIT graduate with a **Network Technology** specialization
-- 🛡️ Interested in **network security, firewall systems, device monitoring, and traffic control**
-- 🐍 Building desktop applications with **Python and PyQt6**
-- 🌐 Developing responsive browser interfaces with **HTML, CSS, and JavaScript**
-- 🗄️ Working with **SQLite** and local application persistence
-- 🪟 Experienced with Windows networking tools, firewall rules, ARP, DNS, and system-level integration
-
-## Featured Projects
-
-### 🔥 [Pyrewall — Next Generation Firewall](https://github.com/Sachibara/Pyrewall)
-
-A Windows-focused firewall and network monitoring desktop application built with Python and PyQt6.
-
-**Highlights**
-- Firewall start/stop controller
-- Connected-device discovery and blocking
-- Domain and IP filtering
-- DNS-based filtering support
-- Firewall rule management
-- Threat, history, settings, and administration views
-- SQLite-backed persistence
-- Windows Firewall and WinDivert integration
-
-**Stack:** Python · PyQt6 · SQLite · WinDivert · DNS · Windows Firewall · Networking
+- 🎓 **BS Information Technology — Network Technology**
+- 🏅 **Academic Achiever — GWA 1.50**
+- 🖥️ **TESDA Computer Systems Servicing NC II**
+- 🌐 Hands-on experience in **IT Network Support, technical support, infrastructure, and system maintenance**
+- 🛡️ Background in **firewall management, packet analysis, network monitoring, access control, and vulnerability assessment**
+- 🐍 Developer of **PyreWall** and **StudySync**
+- 💻 Freelance experience in **Full-Stack Development and IT Services**
+- 🔧 Focused on practical troubleshooting, network operations, desktop tools, and secure system design
 
 ---
 
-### ☁️ [OmniShare](https://github.com/Sachibara/final_omnishare)
+## 💼 IT Experience
 
-A responsive browser-based file-sharing interface prototype.
+### IT Network Support Intern — Concentrix
+**Nuvali, Sta. Rosa, Laguna | Feb 2026 – May 2026 | 486 Hours**
 
-**Highlights**
-- Drag-and-drop file selection
-- Upload simulation and progress feedback
-- Generated file IDs
-- File expiration controls
-- Upload/download history
-- Browser-side account state
-- Responsive user interface
+- Troubleshot network, hardware, and software issues
+- Assisted users with technical and connectivity concerns
+- Configured and maintained computer systems and devices
+- Supported daily IT operations and system maintenance
+- Documented technical issues and resolutions
+- Collaborated with IT teams to maintain smooth operations
+- Delivered timely technical support to end users
 
-**Stack:** HTML5 · CSS3 · JavaScript · localStorage
+### Freelance Full-Stack Developer & IT Services
+**Remote, Philippines | 2016 – Present**
+
+- Full-stack development
+- IT services and technical support
+- System and software troubleshooting
+- Technical consulting for computer and software-related needs
 
 ---
 
-## Technical Skills
+## 🚀 Featured IT Projects
+
+### 🔥 [PyreWall — Python-Based Next Generation Firewall](https://github.com/Sachibara/Pyrewall)
+
+A Python-based firewall and network monitoring system designed for Windows environments.
+
+**Key Features**
+- Real-time packet inspection
+- Website filtering
+- Application filtering
+- Connected-device monitoring
+- Traffic logging
+- Firewall rule enforcement
+- Network visibility and control
+- Desktop administration interface
+
+**Technology Stack**
+
+Python · PyQt6 · SQLite · WinDivert · Windows Firewall · Networking
+
+---
+
+### 📚 StudySync — Learning Management & Collaboration System
+
+A student productivity and collaboration system developed with Python, PyQt6, and Supabase.
+
+**Key Features**
+- Task management
+- Calendar scheduling
+- Group collaboration
+- Academic organization tools
+- Gmail-based email notifications and communication
+- Supabase-backed data and application services
+
+**Technology Stack**
+
+Python · PyQt6 · Supabase · Gmail Integration · Database Development
+
+---
+
+## 🛠️ Technical Skills
+
+### IT Support & Infrastructure
+
+Technical Support · Helpdesk Operations · IT Asset Management · Hardware/Software Troubleshooting
+
+Network Troubleshooting & Configuration · System Configuration · Windows Administration
+
+Active Directory · User Account Management · Microsoft 365 Administration
+
+Remote Desktop Support · System Maintenance · OS Installation · Technical Documentation
+
+### Cybersecurity
+
+Firewall Management · Access Control · Packet Analysis · Network Monitoring
+
+Traffic Logging · Vulnerability Assessment
 
 ### Programming & Development
-Python · JavaScript · HTML5 · CSS3 · SQL
 
-### Desktop & UI
-PyQt6 · Responsive UI · Desktop Application Development
+Python · C++ · PHP · Java
 
-### Networking & Security
-TCP/IP · DNS · ARP · Windows Firewall · Network Monitoring · Device Discovery · Traffic Filtering
+HTML5 · CSS3 · JavaScript
 
-### Data & Tools
-SQLite · Git · GitHub · Windows · PyInstaller
+SQL · MySQL · SQLite · Supabase
+
+REST API Integration · Object-Oriented Programming
+
+UI/UX Design · Desktop & Mobile Application Development
+
+Git · GitHub
 
 ---
 
-## Current Focus
+## 🎓 Education & Technical Training
 
-I'm continuing to improve **Pyrewall** as a portfolio and network-security project while strengthening my skills in:
+### BS Information Technology — Network Technology
+**Pamantasan ng Lungsod ng San Pablo**  
+2022 – 2026  
+**Academic Achiever | GWA: 1.50**
 
-- Network and system administration
-- Python application engineering
-- Cybersecurity fundamentals
-- Full-stack and web development
-- Deployment and maintainable software design
+### Computer Systems Servicing NC II
+**Marcelino Fule Memorial College**  
+2026
+
+---
+
+## 📜 IT & Cybersecurity Certifications
+
+- **Computer Systems Servicing NC II (CSS NC II)**
+- **Ethical Hacking and Data Security**
+- **Certified Cybersecurity Educator Professional (CCEP)**
+- **Certified Red Team Operations Management (CRTOM)**
+- **Certified C++ Practitioner (CCPC)**
+
+---
+
+## 🎯 Professional Focus
+
+I am building my career around:
+
+- IT Support and Helpdesk Operations
+- Network Support and Infrastructure
+- Windows Administration
+- Cybersecurity and Network Monitoring
+- Python Desktop Application Development
+- Full-Stack Development
+- System Troubleshooting and Technical Documentation
 
 ---
 
 <div align="center">
 
-### Explore my work
+### Explore My Work
 
-[Pyrewall](https://github.com/Sachibara/Pyrewall) • [OmniShare](https://github.com/Sachibara/final_omnishare) • [Portfolio](https://raw.githack.com/Sachibara/final_omnishare/main/portfolio/index.html)
+[PyreWall](https://github.com/Sachibara/Pyrewall) • [GitHub Profile](https://github.com/Sachibara) • [Portfolio](https://raw.githack.com/Sachibara/final_omnishare/main/portfolio/index.html)
 
 </div>
