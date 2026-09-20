@@ -7,7 +7,7 @@
 BS Information Technology graduate specializing in **Network Technology**, with hands-on experience in IT support, networking, cybersecurity, desktop application development, and full-stack development.
 
 [![GitHub](https://img.shields.io/badge/GitHub-Sachibara-181717?style=for-the-badge&logo=github)](https://github.com/Sachibara)
-[![Portfolio](https://img.shields.io/badge/Portfolio-View%20Portfolio-0A84FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://raw.githack.com/Sachibara/final_omnishare/main/portfolio/index.html)
+[![Portfolio](https://img.shields.io/badge/Portfolio-View%20Portfolio-0A84FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://raw.githack.com/Sachibara/final_omnishare/main/portfolio-v2/index.html)
 
 </div>
 
@@ -164,6 +164,6 @@ I am building my career around:
 
 ### Explore My Work
 
-[PyreWall](https://github.com/Sachibara/Pyrewall) • [GitHub Profile](https://github.com/Sachibara) • [Portfolio](https://raw.githack.com/Sachibara/final_omnishare/main/portfolio/index.html)
+[PyreWall](https://github.com/Sachibara/Pyrewall) • [GitHub Profile](https://github.com/Sachibara) • [Portfolio](https://raw.githack.com/Sachibara/final_omnishare/main/portfolio-v2/index.html)
 
 </div>
