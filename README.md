@@ -54,39 +54,35 @@ BS Information Technology graduate specializing in **Network Technology**, with 
 
 ### 🔥 [PyreWall — Python-Based Next Generation Firewall](https://github.com/Sachibara/Pyrewall)
 
-A Python-based firewall and network monitoring system designed for Windows environments.
+Windows/PyQt6 next-generation firewall with WinDivert packet filtering, website/application controls, device visibility, custom rules, threats, history, and administration.
 
-**Key Features**
-- Real-time packet inspection
-- Website filtering
-- Application filtering
-- Connected-device monitoring
-- Traffic logging
-- Firewall rule enforcement
-- Network visibility and control
-- Desktop administration interface
+**Stack:** Python · PyQt6 · SQLite · WinDivert · Windows Firewall
 
-**Technology Stack**
+### 🌐 [NetOps Enterprise — Unified Network Operations Platform](https://github.com/Sachibara/NetOps-Command-Center)
 
-Python · PyQt6 · SQLite · WinDivert · Windows Firewall · Networking
+Unified network-operations platform combining monitoring, topology, infrastructure health, IPAM/VLAN planning, configuration backup/change control, guided troubleshooting, documentation, alerts, and audit.
 
----
+**Live:** https://sachibara.github.io/NetOps-Command-Center/  
+**Stack:** JavaScript · Python · FastAPI · SQLite · Supabase · Networking
 
-### 📚 StudySync — Learning Management & Collaboration System
+### 🧰 [OpsFusion — Unified IT Operations Platform](https://github.com/Sachibara/HelpDesk-Pro)
 
-A student productivity and collaboration system developed with Python, PyQt6, and Supabase.
+Integrated IT operations platform connecting service desk, endpoint inventory, asset lifecycle, identity/access, troubleshooting, remote support, patch/compliance, knowledge base, global search, and audit workflows.
 
-**Key Features**
-- Task management
-- Calendar scheduling
-- Group collaboration
-- Academic organization tools
-- Gmail-based email notifications and communication
-- Supabase-backed data and application services
+**Live:** https://sachibara.github.io/HelpDesk-Pro/  
+**Stack:** JavaScript · Supabase · Python · FastAPI · SQLite · ITSM
 
-**Technology Stack**
+### 📚 StudySync — LMS & Student Collaboration System
 
-Python · PyQt6 · Supabase · Gmail Integration · Database Development
+Academic productivity and collaboration platform with task management, calendar scheduling, groups, file workflows, notifications, and Supabase-backed application data.
+
+**Stack:** Python · PyQt6 · Supabase · Gmail Integration
+
+### 📦 [OmniShare](https://finalomnishare.vercel.app)
+
+Browser-based file-sharing product focused on streamlined upload, share, and file-state workflows.
+
+**Stack:** HTML5 · CSS3 · JavaScript
 
 ---
 
