@@ -7,8 +7,8 @@
 BS Information Technology graduate specializing in **Network Technology**, with hands-on experience in IT support, networking, cybersecurity, desktop application development, and full-stack development.
 
 [![GitHub](https://img.shields.io/badge/GitHub-Sachibara-181717?style=for-the-badge&logo=github)](https://github.com/Sachibara)
-[![Portfolio](https://img.shields.io/badge/Portfolio-View%20Portfolio-0A84FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://portfolio-github-io-five-pi.vercel.app/)
-[![Profile Site](https://img.shields.io/badge/Profile%20Site-Open-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white)](https://portfolio-github-io-five-pi.vercel.app/projects/github-profile/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-View%20Portfolio-0A84FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jimcamus.vercel.app/)
+[![Profile Site](https://img.shields.io/badge/Profile%20Site-Open-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jimcamus.vercel.app/projects/github-profile/)
 
 </div>
 
@@ -161,6 +161,6 @@ I am building my career around:
 
 ### Explore My Work
 
-[PyreWall](https://github.com/Sachibara/Pyrewall) • [GitHub Profile](https://github.com/Sachibara) • [Portfolio](https://portfolio-github-io-five-pi.vercel.app/)
+[PyreWall](https://github.com/Sachibara/Pyrewall) • [GitHub Profile](https://github.com/Sachibara) • [Portfolio](https://jimcamus.vercel.app/)
 
 </div>
