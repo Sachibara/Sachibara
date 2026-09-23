@@ -8,6 +8,7 @@ BS Information Technology graduate specializing in **Network Technology**, with 
 
 [![GitHub](https://img.shields.io/badge/GitHub-Sachibara-181717?style=for-the-badge&logo=github)](https://github.com/Sachibara)
 [![Portfolio](https://img.shields.io/badge/Portfolio-View%20Portfolio-0A84FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://portfolio-github-io-five-pi.vercel.app/)
+[![Profile Site](https://img.shields.io/badge/Profile%20Site-Open-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white)](https://portfolio-github-io-five-pi.vercel.app/projects/github-profile/)
 
 </div>
 
