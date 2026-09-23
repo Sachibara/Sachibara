@@ -2,13 +2,12 @@
 
 # Hi, I'm Jim Rodmark Camus 👋
 
-### IT Network Support | Network Technology | Cybersecurity | Python & Full-Stack Development
+### IT Network Support | Network Operations | Cybersecurity | Python & Full-Stack Development
 
-BS Information Technology graduate specializing in **Network Technology**, with hands-on experience in IT support, networking, cybersecurity, desktop application development, and full-stack development.
+BS Information Technology graduate specializing in **Network Technology**, with hands-on experience in IT support, networking, cybersecurity, desktop application development, and full-stack system development.
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-jimcamus.vercel.app-0A84FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jimcamus.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Sachibara-181717?style=for-the-badge&logo=github)](https://github.com/Sachibara)
-[![Portfolio](https://img.shields.io/badge/Portfolio-View%20Portfolio-0A84FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jimcamus.vercel.app/)
-[![Profile Site](https://img.shields.io/badge/Profile%20Site-Open-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jimcamus.vercel.app/projects/github-profile/)
 
 </div>
 
@@ -21,9 +20,9 @@ BS Information Technology graduate specializing in **Network Technology**, with 
 - 🖥️ **TESDA Computer Systems Servicing NC II**
 - 🌐 Hands-on experience in **IT Network Support, technical support, infrastructure, and system maintenance**
 - 🛡️ Background in **firewall management, packet analysis, network monitoring, access control, and vulnerability assessment**
-- 🐍 Developer of **PyreWall** and **StudySync**
-- 💻 Freelance experience in **Full-Stack Development and IT Services**
-- 🔧 Focused on practical troubleshooting, network operations, desktop tools, and secure system design
+- 🐍 Developer of **PyreWall**, **NetOps Enterprise**, **OpsFusion**, and **StudySync**
+- 💻 Experience building desktop, web, database-backed, and cloud-connected systems
+- 🔧 Focused on practical troubleshooting, network operations, secure system design, and operational automation
 
 ---
 
@@ -41,7 +40,7 @@ BS Information Technology graduate specializing in **Network Technology**, with 
 - Delivered timely technical support to end users
 
 ### Freelance Full-Stack Developer & IT Services
-**Remote, Philippines | 2016 – Present**
+**Remote, Philippines**
 
 - Full-stack development
 - IT services and technical support
@@ -50,39 +49,139 @@ BS Information Technology graduate specializing in **Network Technology**, with 
 
 ---
 
-## 🚀 Featured IT Projects
+# 🚀 Flagship Projects
 
-### 🔥 [PyreWall — Python-Based Next Generation Firewall](https://github.com/Sachibara/Pyrewall)
+My portfolio is intentionally consolidated around **five flagship systems** rather than many overlapping demos. Smaller network and IT-operations utilities were absorbed into larger products to demonstrate integrated architecture, shared workflows, and stronger real-world engineering.
 
-Windows/PyQt6 next-generation firewall with WinDivert packet filtering, website/application controls, device visibility, custom rules, threats, history, and administration.
+## 🔥 1. PyreWall — Python-Based Next Generation Firewall
 
-**Stack:** Python · PyQt6 · SQLite · WinDivert · Windows Firewall
+**Original desktop app:** [Sachibara/Pyrewall](https://github.com/Sachibara/Pyrewall)  
+**Browser remake:** [Open Site](https://jimcamus.vercel.app/projects/pyrewall-web/)
 
-### 🌐 [NetOps Enterprise — Unified Network Operations Platform](https://github.com/Sachibara/NetOps-Command-Center)
+Windows-focused NGFW and network-control application built around the original PyQt6 desktop system.
 
-Unified network-operations platform combining monitoring, topology, infrastructure health, IPAM/VLAN planning, configuration backup/change control, guided troubleshooting, documentation, alerts, and audit.
+### Highlights
+- WinDivert packet filtering and Windows Firewall integration
+- Website blocking through domain, DNS, TLS SNI, HTTP Host, and resolved-IP policy
+- Connected-device discovery with IP/MAC visibility and block/unblock controls
+- Administrator-managed application/service signatures
+- Custom IP/port/protocol firewall rules
+- Threat monitoring, logs, history, settings, backups, and user administration
+- Browser remake that mirrors the original desktop workflow for portfolio viewing
 
-**Live:** https://sachibara.github.io/NetOps-Command-Center/  
-**Stack:** JavaScript · Python · FastAPI · SQLite · Supabase · Networking
+**Stack:** Python · PyQt6 · SQLite · WinDivert · Windows Firewall · Flask · JavaScript
 
-### 🧰 [OpsFusion — Unified IT Operations Platform](https://github.com/Sachibara/HelpDesk-Pro)
+---
 
-Integrated IT operations platform connecting service desk, endpoint inventory, asset lifecycle, identity/access, troubleshooting, remote support, patch/compliance, knowledge base, global search, and audit workflows.
+## 🌐 2. NetOps Enterprise — Unified Network Operations Platform
 
-**Live:** https://sachibara.github.io/HelpDesk-Pro/  
-**Stack:** JavaScript · Supabase · Python · FastAPI · SQLite · ITSM
+**Repository:** [Sachibara/NetOps-Command-Center](https://github.com/Sachibara/NetOps-Command-Center)  
+**Live:** [Open NetOps Enterprise](https://sachibara.github.io/NetOps-Command-Center/)
 
-### 📚 StudySync — LMS & Student Collaboration System
+Unified NOC and network-engineering platform built by consolidating multiple infrastructure and networking projects into one shared system.
 
-Academic productivity and collaboration platform with task management, calendar scheduling, groups, file workflows, notifications, and Supabase-backed application data.
+### Highlights
+- NOC command center and operational health overview
+- Logical network topology
+- Shared device inventory
+- Infrastructure health monitoring
+- IPAM, VLAN, and subnet management
+- Configuration backup, versioning, and change detection
+- Guided network troubleshooting
+- Network documentation and port mappings
+- Alerts, incidents, and unified audit history
+- Supabase-backed cloud workspace with Auth and RLS
 
-**Stack:** Python · PyQt6 · Supabase · Gmail Integration
+### Consolidated Projects
+- NetOps Command Center
+- Infrastructure Health Monitor
+- IPAM + Subnet Manager
+- Network Config Backup Manager
+- Network Troubleshooting Toolkit
+- Network Documentation Generator
 
-### 📦 [OmniShare](https://finalomnishare.vercel.app)
+**Stack:** JavaScript · Python · FastAPI · SQLite · Supabase · ICMP/DNS/TCP/ARP Diagnostics
 
-Browser-based file-sharing product focused on streamlined upload, share, and file-state workflows.
+---
 
-**Stack:** HTML5 · CSS3 · JavaScript
+## 🧰 3. OpsFusion — Unified IT Operations Platform
+
+**Repository:** [Sachibara/HelpDesk-Pro](https://github.com/Sachibara/HelpDesk-Pro)  
+**Live:** [Open OpsFusion](https://sachibara.github.io/HelpDesk-Pro/)
+
+Integrated IT operations platform connecting service desk, endpoints, assets, identity, troubleshooting, compliance, support, and audit into one workflow.
+
+### Highlights
+- Service Desk / ITSM
+- Endpoint inventory
+- IT asset lifecycle management
+- Identity and access management
+- Endpoint troubleshooting
+- Remote-support workflows
+- Patch and endpoint compliance
+- Knowledge-base workflows
+- Global search
+- Unified operational audit
+- Supabase Auth, RLS, and role-based cloud workspaces
+
+### Consolidated Projects
+- HelpDesk Pro
+- IT Asset Manager
+- AD User Provisioning Simulator
+- LAN Deployment & Remote Support Console
+- Patch & Endpoint Compliance Dashboard
+- Endpoint troubleshooting and documentation workflows
+
+**Stack:** JavaScript · Supabase · Python · FastAPI · SQLite · ITSM Workflows
+
+---
+
+## 📚 4. StudySync — LMS & Student Collaboration System
+
+**Live:** [Open StudySync](https://study-sync-remod.vercel.app/)
+
+Academic collaboration and productivity platform for students and professors.
+
+### Highlights
+- Student and professor authentication
+- Group creation and membership workflows
+- Task and calendar management
+- File sharing and collaboration
+- Group chat and notifications
+- Assignment and progress workflows
+- Supabase-backed application data
+
+**Stack:** Python · PyQt6 · Supabase · JavaScript
+
+---
+
+## 📦 5. OmniShare — File Sharing Platform
+
+**Repository:** [Sachibara/final_omnishare](https://github.com/Sachibara/final_omnishare)  
+**Live:** [Open OmniShare](https://finalomnishare.vercel.app/)
+
+Browser-based file-sharing product focused on streamlined upload, sharing, and file-state workflows.
+
+**Stack:** HTML5 · CSS3 · JavaScript · Vercel
+
+---
+
+## 🧠 Engineering Focus
+
+Across these systems, I focus on:
+
+- Network and infrastructure troubleshooting
+- Firewall and traffic-control workflows
+- IT service management
+- Endpoint and asset operations
+- Identity and access workflows
+- Supabase Row Level Security
+- Role-based access control
+- Audit logging and traceability
+- Local-agent vs cloud-application separation
+- Modular architecture
+- Secure public demo boundaries
+- CI/CD and deployment validation
 
 ---
 
@@ -98,11 +197,13 @@ Active Directory · User Account Management · Microsoft 365 Administration
 
 Remote Desktop Support · System Maintenance · OS Installation · Technical Documentation
 
-### Cybersecurity
+### Networking & Cybersecurity
 
 Firewall Management · Access Control · Packet Analysis · Network Monitoring
 
-Traffic Logging · Vulnerability Assessment
+DNS · TCP/IP · VLANs · IPAM · Subnetting · ARP · ICMP · Traffic Logging
+
+Vulnerability Assessment · Security Monitoring
 
 ### Programming & Development
 
@@ -112,11 +213,11 @@ HTML5 · CSS3 · JavaScript
 
 SQL · MySQL · SQLite · Supabase
 
-REST API Integration · Object-Oriented Programming
+REST API Integration · FastAPI · Flask
 
-UI/UX Design · Desktop & Mobile Application Development
+Object-Oriented Programming · Desktop Application Development · Web Application Development
 
-Git · GitHub
+Git · GitHub · Vercel
 
 ---
 
@@ -143,24 +244,29 @@ Git · GitHub
 
 ---
 
-## 🎯 Professional Focus
+## 🎯 Target Roles
 
-I am building my career around:
+I am actively building toward roles in:
 
-- IT Support and Helpdesk Operations
-- Network Support and Infrastructure
-- Windows Administration
-- Cybersecurity and Network Monitoring
-- Python Desktop Application Development
-- Full-Stack Development
-- System Troubleshooting and Technical Documentation
+- **IT Support**
+- **Network Support**
+- **NOC / Network Operations**
+- **Junior Systems Administration**
+- **Infrastructure Support**
+- **Technical Support**
+- **Junior Full-Stack / Internal Tools Development**
 
 ---
 
 <div align="center">
 
-### Explore My Work
+## Explore My Work
 
-[PyreWall](https://github.com/Sachibara/Pyrewall) • [GitHub Profile](https://github.com/Sachibara) • [Portfolio](https://jimcamus.vercel.app/)
+### 🌐 [jimcamus.vercel.app](https://jimcamus.vercel.app/)
+
+[PyreWall](https://github.com/Sachibara/Pyrewall) •
+[NetOps Enterprise](https://github.com/Sachibara/NetOps-Command-Center) •
+[OpsFusion](https://github.com/Sachibara/HelpDesk-Pro) •
+[GitHub](https://github.com/Sachibara)
 
 </div>
