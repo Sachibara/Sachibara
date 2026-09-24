@@ -166,6 +166,22 @@ Browser-based file-sharing product focused on streamlined upload, sharing, and f
 
 ---
 
+## 🧪 Cisco Packet Tracer — Enterprise Network Engineering Labs
+
+**Live lab suite:** [jimcamus.vercel.app/projects/network-engineering-labs](https://jimcamus.vercel.app/projects/network-engineering-labs/)
+
+Five enterprise-style labs designed to demonstrate Network Engineer and NOC skills:
+
+- **Resilient Enterprise Campus** — HSRP, EtherChannel, Rapid-PVST, VLANs, OSPF, DHCP relay, ACLs, NAT
+- **Multi-Site OSPF Enterprise WAN** — multi-area OSPF, ABRs, summarization, branch VLANs, DHCP, backup path engineering
+- **Secure Internet Edge & DMZ** — NAT/PAT, static publishing, ACLs, guest/DMZ segmentation, SSH, port security
+- **Dual-Stack IPv4/IPv6 Campus** — OSPFv2, OSPFv3, SLAAC, IPv6 routing and validation
+- **Enterprise Troubleshooting Challenge** — fault isolation, root-cause analysis, corrective action, and verification
+
+Each lab includes addressing plans, Cisco IOS configuration templates, verification commands, failure scenarios, and evidence requirements for a final Cisco Packet Tracer build.
+
+---
+
 ## 🧠 Engineering Focus
 
 Across these systems, I focus on:
