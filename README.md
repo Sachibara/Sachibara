@@ -166,31 +166,6 @@ Browser-based file-sharing product focused on streamlined upload, sharing, and f
 
 ---
 
-## 🧪 Cisco Packet Tracer — Featured Enterprise Network Project
-
-**Live case study:** [Resilient Enterprise Campus & Branch Network](https://jimcamus.vercel.app/projects/cisco-enterprise-network/)
-
-A single enterprise-scale Cisco Packet Tracer project designed to demonstrate practical Network Engineer and NOC skills in one coherent topology.
-
-### Technical scope
-- HSRP gateway redundancy across dual HQ distribution switches
-- Rapid-PVST with STP root placement aligned to HSRP roles
-- LACP EtherChannel
-- VLANs, 802.1Q trunks, Layer-3 switching, and inter-VLAN routing
-- OSPF area 0 across HQ/WAN with Branch area 10 and route summarization
-- centralized DHCP/DNS using DHCP relay
-- guest network isolation with extended ACLs
-- NAT/PAT and static DMZ web publishing
-- SSH-only device administration
-- access-switch port security
-- documented OSPF, HSRP, STP, NAT, ACL, DHCP, failover, and troubleshooting tests
-
-The project includes a topology/addressing design, per-device IOS configuration files, service definitions, a verification checklist, and an engineering report.
-
-> The Cisco Packet Tracer `.pkt` binary and simulator screenshots must be generated from the actual Packet Tracer desktop application before claiming simulator validation.
-
----
-
 ## 🧠 Engineering Focus
 
 Across these systems, I focus on:
