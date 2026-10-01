@@ -1,0 +1,73 @@
+# Optional: copy to .github/workflows/portfolio.yml to enable in a standalone repo
+# (or this repo). All working-directory paths are relative to repository root.
+name: Portfolio project checks
+on: [workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  node:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: python projects/tests/validate_collection.py
+      - run: node --test projects/servicenow-change-governance/tests/*.test.mjs
+      - run: npm install && npm test && npm run build
+        working-directory: projects/react-incident-board
+      - run: npm install && npm run build
+        working-directory: projects/dotnet-angular-assets/web
+  dotnet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - run: dotnet build
+        working-directory: projects/dotnet-angular-assets/api
+      - name: Exercise API contract
+        shell: bash
+        run: |
+          cd projects/dotnet-angular-assets/api
+          dotnet run --no-build --urls http://127.0.0.1:5080 > /tmp/asset-api.log 2>&1 &
+          api_pid=$!
+          trap 'kill "$api_pid" || true' EXIT
+          for attempt in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:5080/api/health; then break; fi
+            sleep 1
+          done
+          python ../../tests/api_smoke.py assets http://127.0.0.1:5080
+  php:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: sqlite3, pdo_sqlite, intl, mbstring
+          tools: composer
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: find projects -name '*.php' -print0 | xargs -0 -n1 php -l
+      - run: python setup.py
+        working-directory: projects/laravel-vue-expenses
+      - run: npm install && npm run build && php artisan test --filter=ExpenseTest
+        working-directory: projects/laravel-vue-expenses/runtime
+      - run: python setup.py
+        working-directory: projects/codeigniter-maintenance
+      - run: php spark routes
+        working-directory: projects/codeigniter-maintenance/runtime
+  ruby:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          working-directory: projects/ruby-change-api
+          bundler-cache: true
+      - run: bundle exec ruby tests/api_test.rb
+        working-directory: projects/ruby-change-api

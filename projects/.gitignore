@@ -1,0 +1,11 @@
+**/node_modules/
+**/dist/
+**/vendor/
+**/bin/
+**/obj/
+**/.env
+**/*.sqlite*
+**/*.db
+**/runtime/
+**/data/
+**/coverage/

@@ -1,0 +1,51 @@
+{
+  "application": "Global (developer instance only)",
+  "table": "u_sachi_change",
+  "label": "Sachibara Change",
+  "audit": true,
+  "roles": [
+    "u_sachi_change.operator",
+    "u_sachi_change.approver"
+  ],
+  "fields": [
+    {
+      "name": "u_title",
+      "type": "String",
+      "length": 120,
+      "mandatory": true
+    },
+    {
+      "name": "u_risk",
+      "type": "Choice",
+      "choices": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "default": "low",
+      "mandatory": true
+    },
+    {
+      "name": "u_status",
+      "type": "Choice",
+      "choices": [
+        "draft",
+        "approved",
+        "rejected",
+        "implemented"
+      ],
+      "default": "draft",
+      "mandatory": true
+    },
+    {
+      "name": "u_rollback_plan",
+      "type": "String",
+      "length": 4000
+    },
+    {
+      "name": "u_requested_by",
+      "type": "Reference",
+      "reference": "sys_user"
+    }
+  ]
+}
