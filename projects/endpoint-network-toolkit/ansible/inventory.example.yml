@@ -1,0 +1,11 @@
+all:
+  children:
+    switches:
+      hosts:
+        lab_switch:
+          ansible_host: 192.0.2.10
+      vars:
+        ansible_connection: ansible.netcommon.network_cli
+        ansible_network_os: cisco.ios.ios
+        ansible_user: laboperator
+        ansible_host_key_checking: true

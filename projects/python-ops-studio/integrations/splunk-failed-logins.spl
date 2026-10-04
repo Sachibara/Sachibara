@@ -1,0 +1,6 @@
+index=YOUR_AUTH_INDEX sourcetype="WinEventLog:Security" EventCode=4625 earliest=-1h
+| eval SourceIP=coalesce(IpAddress,Source_Network_Address,src_ip)
+| where isnotnull(SourceIP)
+| bin _time span=5m
+| stats count as Failures values(Account_Name) as Accounts by _time SourceIP
+| where Failures>=5

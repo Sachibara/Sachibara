@@ -1,0 +1,3 @@
+import {cookies} from 'next/headers';import {backend} from '../lib/api';import Portal from './portal';
+export const dynamic='force-dynamic';
+export default async function Page(){const token=(await cookies()).get('ops_session')?.value;let user=null,rows=[],error='';if(token){try{const [profile,incidents]=await Promise.all([backend('/auth/me',token),backend('/incidents',token)]);if(profile.ok&&incidents.ok){user=(await profile.json()).user;rows=(await incidents.json()).incidents;}else error='Session expired. Sign in again.';}catch{error='Operations API is unavailable.';}}return <Portal user={user} rows={rows} initialError={error}/>;}

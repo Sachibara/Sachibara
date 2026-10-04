@@ -1,0 +1,3 @@
+# SIEM query integrations
+
+These native KQL and SPL query sources mirror the local repeated-failure idea using each platform's own event schema. Sentinel requires Entra SigninLogs ingestion and permissions. Replace the Splunk index placeholder and verify the source IP/account field names against your ingested Windows events. Both use fixed five-minute bins, whereas the Python analyzer uses a sliding time window. They are not identical detection implementations. Review false positives and configure schedules/response procedures in a test environment. No SIEM tenant is connected or modified by this repository.

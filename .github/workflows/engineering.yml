@@ -1,0 +1,132 @@
+name: Engineering software checks
+on:
+  push:
+    paths: ['projects/**', '.github/workflows/engineering.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: engineering-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 24}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python projects/tests/validate_collection.py
+      - run: node --test projects/node-operations-platform/tests/*.test.mjs projects/react-incident-board/tests/*.test.mjs projects/servicenow-change-governance/tests/*.test.mjs
+      - run: python -m unittest discover -s tests -v
+        working-directory: projects/python-ops-studio
+      - run: python -m unittest discover -s tests -v
+        working-directory: projects/delivery-cloud-lab
+      - run: python pipeline.py examples/tickets.csv
+        working-directory: projects/data-bi-starter
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 24}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: npm install
+        working-directory: projects/qa-automation-lab
+      - run: npx playwright install --with-deps chromium
+        working-directory: projects/qa-automation-lab
+      - run: npm test
+        working-directory: projects/qa-automation-lab
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with: {name: browser-report, path: projects/qa-automation-lab/playwright-report}
+  frontend:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project: [react-incident-board, node-operations-platform/web, nextjs-operations-portal, dotnet-angular-assets/web, mobile-service-desk]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 24}
+      - run: npm install
+        working-directory: projects/${{ matrix.project }}
+      - run: npm run build --if-present && npm run check --if-present
+        working-directory: projects/${{ matrix.project }}
+  java:
+    runs-on: ubuntu-latest
+    env:
+      INVENTORY_ADMIN_PASSWORD: ci-only-inventory-password
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: {distribution: temurin, java-version: '17', cache: maven}
+      - run: mvn -B package
+        working-directory: projects/java-inventory-service
+      - name: Rules and actual Java API contract
+        working-directory: projects/java-inventory-service
+        run: |
+          javac -d target/rules src/main/java/com/sachibara/inventory/StockRules.java tests/StockRulesCheck.java
+          java -cp target/rules StockRulesCheck
+          java -jar target/inventory-service-1.0.0.jar > /tmp/inventory.log 2>&1 &
+          app_pid=$!
+          trap 'kill "$app_pid" || true' EXIT
+          for attempt in {1..45}; do
+            if curl -fsS http://127.0.0.1:8084/ > /dev/null; then break; fi
+            sleep 1
+          done
+          python tests/api_smoke.py
+  dotnet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with: {dotnet-version: '10.0.x'}
+      - run: dotnet build
+        working-directory: projects/dotnet-angular-assets/api
+      - name: API contract
+        working-directory: projects/dotnet-angular-assets/api
+        run: |
+          dotnet run --no-build --urls http://127.0.0.1:5080 > /tmp/assets.log 2>&1 &
+          app_pid=$!
+          trap 'kill "$app_pid" || true' EXIT
+          for attempt in {1..30}; do
+            if curl -fsS http://127.0.0.1:5080/api/health; then break; fi
+            sleep 1
+          done
+          python ../../tests/api_smoke.py assets http://127.0.0.1:5080
+  php:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with: {php-version: '8.3', extensions: 'sqlite3, pdo_sqlite, intl, mbstring', tools: composer}
+      - uses: actions/setup-node@v4
+        with: {node-version: 24}
+      - run: find projects -name '*.php' -print0 | xargs -0 -n1 php -l
+      - run: python setup.py
+        working-directory: projects/laravel-vue-expenses
+      - run: npm install && npm run build && php artisan test --filter=ExpenseTest
+        working-directory: projects/laravel-vue-expenses/runtime
+      - run: python setup.py
+        working-directory: projects/codeigniter-maintenance
+      - run: php spark routes
+        working-directory: projects/codeigniter-maintenance/runtime
+  ruby:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with: {ruby-version: '3.3', working-directory: projects/ruby-change-api, bundler-cache: true}
+      - run: bundle exec ruby tests/api_test.rb
+        working-directory: projects/ruby-change-api
+  terraform:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+      - run: terraform init -backend=false && terraform validate
+        working-directory: projects/delivery-cloud-lab/terraform

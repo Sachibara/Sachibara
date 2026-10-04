@@ -1,0 +1,7 @@
+// Import pipeline output as a table named Summary. Set numerical column types first.
+Total Tickets = SUM(Summary[total])
+Resolved Tickets = SUM(Summary[resolved])
+Open Tickets = SUM(Summary[open])
+SLA Met Tickets = SUM(Summary[sla_met])
+SLA Met Rate = DIVIDE([SLA Met Tickets], [Resolved Tickets])
+// Format SLA Met Rate as Percentage. Do not average per-priority percentages.

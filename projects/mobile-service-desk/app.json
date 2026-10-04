@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Service Desk Mobile",
+    "slug": "sachibara-service-desk",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      "expo-secure-store"
+    ],
+    "android": {
+      "package": "com.sachibara.servicedesk"
+    },
+    "ios": {
+      "bundleIdentifier": "com.sachibara.servicedesk"
+    }
+  }
+}

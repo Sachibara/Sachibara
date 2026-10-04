@@ -1,0 +1,7 @@
+// Microsoft Sentinel / Entra SigninLogs. Scheduled-rule building block; inspect tenant field availability.
+SigninLogs
+| where TimeGenerated > ago(1h)
+| where tostring(ResultType) != "0"
+| summarize Failures=count(), Users=make_set(UserPrincipalName, 20) by IPAddress, bin(TimeGenerated, 5m)
+| where Failures >= 5
+| project TimeGenerated, IPAddress, Failures, Users

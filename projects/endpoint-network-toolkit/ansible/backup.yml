@@ -1,0 +1,22 @@
+- name: Read and back up IOS configuration
+  hosts: switches
+  gather_facts: false
+  tasks:
+    - name: Read running configuration
+      cisco.ios.ios_command:
+        commands: [show running-config]
+      register: config
+      no_log: true
+    - name: Create local backup directory
+      ansible.builtin.file:
+        path: "{{ playbook_dir }}/backups"
+        state: directory
+        mode: '0700'
+      delegate_to: localhost
+    - name: Save configuration on controller
+      ansible.builtin.copy:
+        content: "{{ config.stdout[0] }}"
+        dest: "{{ playbook_dir }}/backups/{{ inventory_hostname | regex_replace('[^A-Za-z0-9_-]', '_') }}.cfg"
+        mode: '0600'
+      delegate_to: localhost
+      no_log: true

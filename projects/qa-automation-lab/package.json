@@ -1,0 +1,14 @@
+{
+  "name": "sachibara-qa-lab",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "playwright": "^1.55.0",
+    "typescript": "~5.9.2",
+    "@types/node": "^24.0.0"
+  }
+}

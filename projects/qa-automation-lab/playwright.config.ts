@@ -1,0 +1,3 @@
+import {defineConfig} from 'playwright/test';import {mkdtempSync} from 'node:fs';import {tmpdir} from 'node:os';import {join} from 'node:path';
+const data=mkdtempSync(join(tmpdir(),'sachibara-e2e-'));
+export default defineConfig({testDir:'tests',fullyParallel:false,workers:1,retries:0,reporter:[['list'],['html',{open:'never'}]],use:{baseURL:'http://127.0.0.1:8097',headless:true,trace:'retain-on-failure',screenshot:'only-on-failure'},webServer:{command:'python ../python-ops-studio/server.py --port 8097',url:'http://127.0.0.1:8097/api/health',reuseExistingServer:false,env:{OPS_TOKEN:'qa-only-token-do-not-deploy',OPS_DB:join(data,'test.sqlite'),OPS_MONITOR_TARGETS:'{"QA server":"http://127.0.0.1:8097/api/health"}'}}});

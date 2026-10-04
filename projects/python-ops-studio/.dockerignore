@@ -1,0 +1,8 @@
+node_modules
+web/node_modules
+web/dist
+data
+__pycache__
+**/__pycache__
+.env
+.git

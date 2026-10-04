@@ -1,0 +1,2 @@
+SamAccountName,DisplayName,UserPrincipalName,OU
+demo.operator,Demo Operator,demo.operator@example.test,"OU=Lab,DC=example,DC=test"

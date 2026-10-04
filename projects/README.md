@@ -1,42 +1,48 @@
-# Sachibara · Engineering Projects
+# Sachibara · Engineering Software Collection
 
-Nine distinct portfolio demos covering ReactJS/React, .NET, PHP, Laravel, Angular, WordPress, Ruby, TypeScript, CodeIgniter, VueJS, Shopify, ServiceNow, frontend, backend and fullstack development. Authored for Jim Rodmark Camus. React and ReactJS refer to the same library; frontend/backend/fullstack are project roles rather than extra frameworks.
+18 software projects and integration toolkits spanning application development, networking, systems, cloud delivery, security operations, data/BI, AI-assisted retrieval, mobile and QA. The nine original demos are retained; nine additional packages implement the broader engineering scope. The Python studio contains eight operational tools in one browser application.
 
-| Project | Stack / role | Implemented behavior |
+## Start with working local software
+- **[Ops Studio](python-ops-studio/)**: `python server.py`; open port 8090 and enter the printed operator token. No dependency downloads needed.
+- **[Operations Platform API](node-operations-platform/)**: Node 24, `npm start`; SQLite mode works without downloads. The React UI requires npm dependencies.
+- **[Batch data pipeline](data-bi-starter/)**: `python pipeline.py examples/tickets.csv`; generates a real SQLite database and BI CSV.
+- **[Cloud plan checker](delivery-cloud-lab/)**: `python policy.py examples/unsafe-plan.json`; reports an intentionally unsafe example and exits 1.
+
+## Applications and stack coverage
+| Software | Stack / capability | Scope |
 |---|---|---|
-| [Incident Command Board](react-incident-board/) | React + TypeScript · Frontend | Incident triage, search, priority, local persistence, validated backup import/export |
-| [Asset Lifecycle Console](dotnet-angular-assets/) | .NET 10 + Angular + TypeScript · Fullstack | Equipment CRUD, owner search, lifecycle tracking, unique tags, EF Core SQLite |
-| [Expense Atlas](laravel-vue-expenses/) | Laravel + PHP + VueJS · Fullstack | Expense CRUD, category totals, integer centavos, validation, CSRF, SQLite |
-| [ServiceSlot](php-service-booking/) | PHP · Backend + server-rendered frontend | Service request queue, booking dates, search, status updates, PDO SQLite |
-| [ChangeGate API](ruby-change-api/) | Ruby + Sinatra · Backend | Authenticated change-request API, validated state transitions, SQLite |
-| [MaintainIQ](codeigniter-maintenance/) | CodeIgniter + PHP · Fullstack MVC | Maintenance job queue, priority, status filtering, CSRF forms, SQLite |
-| [Support Library](wordpress-support-library/) | WordPress + PHP · CMS / frontend | Native plugin, custom articles/topics, editor support, search, pagination |
-| [Tech Collection](shopify-tech-collection/) | Shopify Liquid · Storefront frontend | Merchant-editable section, variants, native add-to-cart, responsive cards |
-| [Change Governance](servicenow-change-governance/) | ServiceNow + JavaScript · Platform backend | Custom table/roles specification, approval rules, audited records, secured REST listing |
+| [Operations Platform](node-operations-platform/) | React, TypeScript, Node.js, PostgreSQL/SQLite | Accounts, ownership, CRUD, audit, concurrency checks |
+| [Next.js Operations Portal](nextjs-operations-portal/) | Next.js App Router, TypeScript | Server rendering, HttpOnly sessions, account/incident forms |
+| [Stock Ledger](java-inventory-service/) | Java, Spring Boot, Security, JPA, H2/PostgreSQL | Inventory UI, transactional stock movement history |
+| [Asset Lifecycle Console](dotnet-angular-assets/) | C#, .NET, Angular, TypeScript, SQLite | Equipment CRUD, lifecycle and ownership fields |
+| [Expense Atlas](laravel-vue-expenses/) | Laravel, PHP, Vue, SQLite | Validated expense CRUD and totals |
+| [ServiceSlot](php-service-booking/) | PHP, PDO, SQLite | Service booking queue and status updates |
+| [ChangeGate API](ruby-change-api/) | Ruby, Sinatra, SQLite | Authenticated change workflow API |
+| [MaintainIQ](codeigniter-maintenance/) | CodeIgniter, PHP, SQLite | Equipment maintenance workflow |
+| [Incident Board](react-incident-board/) | React, TypeScript | Standalone offline-first triage board |
+| [Service Desk Mobile](mobile-service-desk/) | React Native, Expo, TypeScript | Native client for the Operations API |
+| [Ops Studio](python-ops-studio/) | Python, optional FastAPI, SQLite, HTTP | Eight tools detailed below |
+| [Delivery & Cloud Lab](delivery-cloud-lab/) | Docker, Kubernetes, Terraform/AWS, Prometheus, Grafana | Deployment configuration, monitoring and plan-review software |
+| [Endpoint & Network Toolkit](endpoint-network-toolkit/) | PowerShell, AD, Graph/Intune/Entra, Ansible/Cisco | Inventory, onboarding plans and read-only integrations |
+| [Data & BI Starter](data-bi-starter/) | Python, SQL, Power BI DAX, PySpark/Databricks | Batch ETL, analytics output and native platform source |
+| [QA Automation Lab](qa-automation-lab/) | Playwright, TypeScript | Browser/API/data workflow tests |
+| [Support Library](wordpress-support-library/) | WordPress, PHP | Native searchable knowledge-base plugin |
+| [Tech Collection](shopify-tech-collection/) | Shopify, Liquid | Merchant-editable native storefront section |
+| [Change Governance](servicenow-change-governance/) | ServiceNow, JavaScript | Native workflow scripts and installation schema |
 
-## Getting started
-Clone `Sachibara/Sachibara`, enter `projects/`, choose a project and follow its README. Each is independently installable; there is no shared database or required cloud account for the six general web/API projects. WordPress, Shopify and ServiceNow need their respective development environments.
+## Ops Studio tools
+1. Network engineering: VLSM allocator, VLAN validation and reviewable Cisco configuration output.
+2. Network automation support: configuration diffing and baseline audit with credential redaction.
+3. Security operations: failed-login time-window analysis and success-after-failure detection; native Sentinel/Splunk query sources also included.
+4. Endpoint management: imported firewall/disk/inventory-age checks, fed by the PowerShell collector.
+5. Data engineering / BI: validated CSV imports, SQLite upserts, SLA summaries, charts and exports.
+6. Knowledge ingestion: searchable persistent source documents.
+7. AI application integration: cited retrieval and optional local Ollama answer generation.
+8. SRE: actual HTTP probes against operator-configured targets; continuous monitoring is supplied by the Docker observability stack.
 
-Laravel and CodeIgniter include complete project-specific MVC code in `overlay/` and a safe Python setup script that installs the official framework shell into ignored `runtime/`. Third-party framework dependencies are not vendored. The other projects include source and native manifests directly. Public-facing dashboards are local demos; consult each guide before exposing a server.
+These are practical technology combinations. Alternatives such as Flutter, Azure, Django, SQL Server and Salesforce are not implemented merely because related categories exist. Proprietary platform source requires the named platform; there are no fabricated stores, tenants or live integrations.
 
-## Verification
-```sh
-python tests/validate_collection.py
-node --test react-incident-board/tests/*.test.mjs servicenow-change-governance/tests/*.test.mjs
-```
-Read [VALIDATION.md](VALIDATION.md) for checks that actually ran and checks still requiring dependency installation or a platform instance. [ci/portfolio.yml](ci/portfolio.yml) is an optional manual GitHub Actions workflow template. No live deployment is implied.
+## Run and verify
+Each directory has prerequisites, commands, expected behavior and limits. [VALIDATION.md](VALIDATION.md) distinguishes executed checks from unverified builds/platform integrations. [Engineering CI](../.github/workflows/engineering.yml) is the requested automatic build/check workflow when enabled on this repository. No cloud resources, live endpoints or paid platform instances are provisioned by cloning or running the local demos.
 
-## Demonstration suggestions
-Each README contains a short walkthrough and negative-input checks. Record the actual application, show a valid change, reject an invalid input, then show persistence after refresh/restart. Explain the source structure and limits instead of presenting these as commercial production systems.
-
-## Official references
-- [React](https://react.dev/learn) · [TypeScript](https://www.typescriptlang.org/docs/) · [Angular bootstrap](https://angular.dev/api/platform-browser/bootstrapApplication)
-- [ASP.NET Core Minimal API](https://learn.microsoft.com/en-us/aspnet/core/tutorials/min-web-api?view=aspnetcore-10.0)
-- [Laravel installation](https://laravel.com/docs/12.x/installation) · [Vue](https://vuejs.org/guide/introduction.html)
-- [CodeIgniter AppStarter](https://codeigniter.com/user_guide/installation/installing_composer.html)
-- [WordPress custom post types](https://developer.wordpress.org/reference/functions/register_post_type/)
-- [Shopify section schema](https://shopify.dev/docs/storefronts/themes/architecture/sections/section-schema)
-- [ServiceNow Scripted REST API](https://www.servicenow.com/docs/r/api-reference/rest-api-explorer/c_CustomWebServices.html)
-- [Sinatra](https://sinatrarb.com/intro.html)
-
-MIT license for this project's authored source. Frameworks/platforms retain their own licenses and terms.
+For a portfolio demonstration, show an actual successful workflow, an invalid-input case, persistence, and the relevant test. The source implementations are demo-grade foundations; production hardening and operational deployment remain separate work. Authored source is under the [MIT license](LICENSE).
