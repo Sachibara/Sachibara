@@ -79,7 +79,7 @@ Windows-focused firewall and network-control application built around the origin
 ## 🌐 2. NetOps Enterprise — Unified Network Operations Platform
 
 **Repository:** [Sachibara/NetOps-Command-Center](https://github.com/Sachibara/NetOps-Command-Center)  
-**Live:** [Open Site](https://sachibara.github.io/NetOps-Command-Center/)
+**Live:** [Open Site](https://netops-enterprise.vercel.app/)
 
 Unified network-operations platform combining monitoring, topology, IPAM, configuration backup, troubleshooting, infrastructure health, and documentation.
 
@@ -102,7 +102,7 @@ Unified network-operations platform combining monitoring, topology, IPAM, config
 ## 🧰 3. OpsFusion — Unified IT Operations Platform
 
 **Repository:** [Sachibara/HelpDesk-Pro](https://github.com/Sachibara/HelpDesk-Pro)  
-**Live:** [Open Site](https://sachibara.github.io/HelpDesk-Pro/)
+**Live:** [Open Site](https://opsfusion-it.vercel.app/)
 
 Integrated IT operations platform connecting service desk, endpoint inventory, assets, identity, troubleshooting, compliance, knowledge, and audit.
 
@@ -124,7 +124,7 @@ Integrated IT operations platform connecting service desk, endpoint inventory, a
 
 ## 📚 4. StudySync — LMS & Student Collaboration System
 
-**Live:** [Open Site](https://study-sync-remod.vercel.app/)
+**Live:** [Open Site](https://studysync-remod-demo.vercel.app/)
 
 Academic productivity and collaboration system for students and professors.
 
