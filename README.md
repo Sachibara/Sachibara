@@ -104,21 +104,19 @@ Unified network-operations platform combining monitoring, topology, IPAM, config
 **Repository:** [Sachibara/HelpDesk-Pro](https://github.com/Sachibara/HelpDesk-Pro)  
 **Live:** [Open Site](https://opsfusion-it.vercel.app/)
 
-Integrated IT operations platform connecting service desk, endpoint inventory, assets, identity, troubleshooting, compliance, knowledge, and audit.
+A cloud-based IT operations platform integrating service desk, asset lifecycle management, workspace user records, and audit logging, with scheduled SLA, warranty, and maintenance alerts and Gemini-powered ticket analysis.
 
 **Highlights**
-- Service Desk / ITSM
-- Endpoint and asset inventory
-- Identity and access workflows
-- Endpoint troubleshooting
-- Remote-support workflows
-- Patch and compliance tracking
-- Knowledge base
-- Global search
-- Unified audit history
-- Supabase Auth and role-based access
+- Service Desk tickets, priorities, linked assets, work notes, and activity history
+- Asset lifecycle, maintenance tasks, and workspace identity records
+- Hourly server-side SLA, warranty, and maintenance checks with alert deduplication and clearing
+- Gemini ticket summaries, troubleshooting suggestions, and draft work notes with human review before saving
+- Supabase authentication, PostgreSQL persistence, workspace isolation, and audit logging
+- Version-checked cloud saves and 118 automated regression tests
 
-**Stack:** JavaScript · Supabase · Python · FastAPI · SQLite · ITSM Workflows
+**Integration scope:** Endpoint telemetry, remote device control, and real Active Directory provisioning require additional integrations. Portfolio Demo simulations are separate from the Cloud Workspace.
+
+**Current application stack:** HTML5 · CSS3 · JavaScript · Supabase · PostgreSQL · Supabase Edge Functions (TypeScript/Deno) · Google Gemini API · Vercel
 
 ---
 
