@@ -76,7 +76,31 @@ Windows-focused firewall and network-control application built around the origin
 
 ---
 
-## 🌐 2. NetOps Enterprise — Unified Network Operations Platform
+## 🧰 2. OpsFusion — Unified IT Operations Platform
+
+**Repository:** [Sachibara/HelpDesk-Pro](https://github.com/Sachibara/HelpDesk-Pro)  
+**Live:** [Open Site](https://opsfusion-it.vercel.app/)
+
+A cloud-based IT operations platform integrating service desk, asset lifecycle management, workspace user records, and audit logging, with scheduled SLA, warranty, and maintenance alerts and Gemini-powered ticket analysis.
+
+**Highlights**
+- Service Desk tickets, priorities, linked assets, work notes, and activity history
+- Editable endpoint inventory, asset linking and lifecycle management, maintenance tasks, and workspace identity records
+- Duplicate prevention for identity names/usernames and asset names/tags/serials/endpoint links, with database enforcement
+- Knowledge article creation, editing, full-text search, archiving, and restoration
+- Hourly server-side SLA, warranty, and maintenance checks with alert deduplication and clearing
+- Gemini ticket summaries and troubleshooting suggestions
+- Approval-based `add_work_note` tool calling: owner review before execution, with expiry, stale-state checks, replay protection, and audit records
+- Supabase authentication, PostgreSQL persistence, workspace isolation, and audit logging
+- Version-checked cloud saves and 153 automated regression tests (verified 14 October 2026)
+
+**Integration scope:** Endpoint telemetry, remote device control, and real Active Directory provisioning require additional integrations. Shared-company invitations and an employee self-service portal are not yet implemented. Portfolio Demo simulations are separate from the Cloud Workspace.
+
+**Current application stack:** HTML5 · CSS3 · JavaScript · Supabase · PostgreSQL · Supabase Edge Functions (TypeScript/Deno) · Google Gemini API · Vercel
+
+---
+
+## 🌐 3. NetOps Enterprise — Unified Network Operations Platform
 
 **Repository:** [Sachibara/NetOps-Command-Center](https://github.com/Sachibara/NetOps-Command-Center)  
 **Live:** [Open Site](https://netops-enterprise.vercel.app/)
@@ -96,27 +120,6 @@ Unified network-operations platform combining monitoring, topology, IPAM, config
 - Supabase Auth, RLS, and role-based workspaces
 
 **Stack:** JavaScript · Python · FastAPI · SQLite · Supabase · ICMP · DNS · TCP · ARP
-
----
-
-## 🧰 3. OpsFusion — Unified IT Operations Platform
-
-**Repository:** [Sachibara/HelpDesk-Pro](https://github.com/Sachibara/HelpDesk-Pro)  
-**Live:** [Open Site](https://opsfusion-it.vercel.app/)
-
-A cloud-based IT operations platform integrating service desk, asset lifecycle management, workspace user records, and audit logging, with scheduled SLA, warranty, and maintenance alerts and Gemini-powered ticket analysis.
-
-**Highlights**
-- Service Desk tickets, priorities, linked assets, work notes, and activity history
-- Asset lifecycle, maintenance tasks, and workspace identity records
-- Hourly server-side SLA, warranty, and maintenance checks with alert deduplication and clearing
-- Gemini ticket summaries, troubleshooting suggestions, and draft work notes with human review before saving
-- Supabase authentication, PostgreSQL persistence, workspace isolation, and audit logging
-- Version-checked cloud saves and 118 automated regression tests
-
-**Integration scope:** Endpoint telemetry, remote device control, and real Active Directory provisioning require additional integrations. Portfolio Demo simulations are separate from the Cloud Workspace.
-
-**Current application stack:** HTML5 · CSS3 · JavaScript · Supabase · PostgreSQL · Supabase Edge Functions (TypeScript/Deno) · Google Gemini API · Vercel
 
 ---
 
@@ -226,8 +229,8 @@ My portfolio includes a visual credential gallery for the major certifications a
 ### 🌐 [jimcamus.vercel.app](https://jimcamus.vercel.app/)
 
 [PyreWall](https://github.com/Sachibara/Pyrewall) •
-[NetOps Enterprise](https://github.com/Sachibara/NetOps-Command-Center) •
 [OpsFusion](https://github.com/Sachibara/HelpDesk-Pro) •
+[NetOps Enterprise](https://github.com/Sachibara/NetOps-Command-Center) •
 [OmniShare](https://github.com/Sachibara/final_omnishare)
 
 </div>
