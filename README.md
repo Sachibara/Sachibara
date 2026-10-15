@@ -76,25 +76,26 @@ Windows-focused firewall and network-control application built around the origin
 
 ---
 
-## 🧰 2. OpsFusion — Unified IT Operations Platform
+## 🧰 2. OpsFusion — IT Operations & Employee Support
 
 **Repository:** [Sachibara/HelpDesk-Pro](https://github.com/Sachibara/HelpDesk-Pro)  
-**Live:** [Open Site](https://opsfusion-it.vercel.app/)
+**IT Workspace:** [Open workspace](https://opsfusion-it.vercel.app/) · **Employee Support Portal:** [Get support](https://opsfusion-it.vercel.app/employee)
 
-A cloud-based IT operations platform integrating service desk, asset lifecycle management, workspace user records, and audit logging, with scheduled SLA, warranty, and maintenance alerts and Gemini-powered ticket analysis.
+A cloud-based platform for service desk, asset and identity management, audit logging, and scheduled alerts. Includes an employee portal for submitting requests, tracking progress, and messaging IT, plus Gemini-powered ticket assistance grounded in the Knowledge Base and approval-based work-note actions.
 
 **Highlights**
-- Service Desk tickets, priorities, linked assets, work notes, and activity history
-- Editable endpoint inventory, asset linking and lifecycle management, maintenance tasks, and workspace identity records
-- Duplicate prevention for identity names/usernames and asset names/tags/serials/endpoint links, with database enforcement
-- Knowledge article creation, editing, full-text search, archiving, and restoration
-- Hourly server-side SLA, warranty, and maintenance checks with alert deduplication and clearing
-- Gemini ticket summaries and troubleshooting suggestions
-- Approval-based `add_work_note` tool calling: owner review before execution, with expiry, stale-state checks, replay protection, and audit records
+- Employee support portal with guided requests, search, status filters, plain-language explanations, and public conversations with IT
+- Owner-managed employee enrollment; employees can access only their own portal requests, with internal work notes kept private
+- Employee registration, confirmation-email resend, password recovery, and responsive blue/indigo interface
+- Service desk tickets, linked assets, work notes, and activity history; editable endpoint, asset, maintenance and identity records
+- Database-enforced duplicate prevention and version-checked cloud saves
+- Scheduled hourly SLA, warranty and maintenance checks with alert deduplication and clearing
+- AI ticket analysis and work-note proposals retrieve relevant active Knowledge Base articles; analysis displays references and validated citations
+- Approval-based `add_work_note` actions with owner review, expiry, stale-state checks, replay protection, and audit records
 - Supabase authentication, PostgreSQL persistence, workspace isolation, and audit logging
-- Version-checked cloud saves and 153 automated regression tests (verified 14 October 2026)
+- **174 automated tests passed** in the 16 October 2026 release check; tests include mocked services and are not proof of every live integration
 
-**Integration scope:** Endpoint telemetry, remote device control, and real Active Directory provisioning require additional integrations. Shared-company invitations and an employee self-service portal are not yet implemented. Portfolio Demo simulations are separate from the Cloud Workspace.
+**Integration scope:** Endpoint telemetry, remote device control, and real Active Directory provisioning still require integrations. Employee access is manually linked by the workspace owner; automated invitations, attachments and automatic request-update emails are not implemented. Real email delivery and signed-in acceptance of the refreshed portal remain to be verified. The former Portfolio Demo and its sample-data/simulation paths have been removed.
 
 **Current application stack:** HTML5 · CSS3 · JavaScript · Supabase · PostgreSQL · Supabase Edge Functions (TypeScript/Deno) · Google Gemini API · Vercel
 
